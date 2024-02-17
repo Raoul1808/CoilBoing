@@ -15,12 +15,7 @@ public class Plugin : BaseUnityPlugin
         string dir = Directory.GetParent(Info.Location)!.FullName;
         string bundlePath = Path.Combine(dir, "boing");
         var bundle = AssetBundle.LoadFromFile(bundlePath);
-        foreach (var asset in bundle.LoadAllAssets())
-        {
-            Logger.LogInfo(asset.GetType() + " " + asset.name);
-        }
         _boingSound = bundle.LoadAssetWithSubAssets<AudioClip>("boing");
-        Logger.LogInfo("Loaded sound " + _boingSound + " " + _boingSound.Length);
         Harmony.CreateAndPatchAll(typeof(Patches));
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
     }
