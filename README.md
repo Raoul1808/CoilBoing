@@ -1,12 +1,13 @@
 # CoilBoing
-Just making this readme in case I forgor how to build
+Replaces the coil-head spring sound with a cartoon boing.
 
-## Building
+## Steps to build just in case I forgor 💀
 
 - Create a .csproj.user file with this content
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Shamelessly copied from the LethalLib build instructions. Sorry not sorry -->
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <LethalCompanyDir>/home/mew/.local/share/Steam/steamapps/common/</LethalCompanyDir>
@@ -29,8 +30,8 @@ Just making this readme in case I forgor how to build
 </Project>
 ```
 
-- u done!!!
-- yay
+- Build
+- Copy the asset bundle to the destination
 
 ## License
 

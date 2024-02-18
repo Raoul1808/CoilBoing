@@ -1,0 +1,7 @@
+{
+  "name": "CoilBoing",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/Raoul1808/CoilBoing",
+  "description": "Replaces the coil-head spring sound with a comedic cartoon boing",
+  "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
+}
